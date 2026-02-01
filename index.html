@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Will You Be My Valentine? 💖</title>
+<style>
+body {
+margin: 0;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: radial-gradient(circle at top, #ff758c, #ff7eb3);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+overflow: hidden;
+}
+
+
+.card {
+background: white;
+padding: 40px;
+border-radius: 25px;
+box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+text-align: center;
+max-width: 420px;
+width: 90%;
+position: relative;
+animation: popIn 1s ease;
+}
+
+
+@keyframes popIn {
+from { transform: scale(0.8); opacity: 0; }
+to { transform: scale(1); opacity: 1; }
+}
+
+
+h1 {
+color: #e63946;
+margin-bottom: 10px;
+}
+
+
+p {
+color: #555;
+margin-bottom: 30px;
+}
+
+
+.buttons {
+position: relative;
+height: 100px;
+}
+
+
+button {
+padding: 14px 30px;
+font-size: 18px;
+border: none;
+border-radius: 40px;
+cursor: pointer;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#yesBtn {
+background-color: #e63946;
+color: white;
+box-shadow: 0 10px 20px rgba(230, 57, 70, 0.4);
+}
+
+
+#yesBtn:hover {
+transform: scale(1.1);
+}
+
+
+#noBtn {
+background-color: #f1f1f1;
+color: #333;
+position: absolute;
+left: 55%;
+top: 0;
+}
+
+
+.message {
+display: none;
+margin-top: 20px;
+font-size: 22px;
+color: #e63946;
+}
+
+
+.heart {
+position: absolute;
+font-size: 20px;
+animation: floatUp 4s linear forwards;
+}
+
+
+@keyframes floatUp {
+from { transform: translateY(0); opacity: 1; }
+to { transform: translateY(-600px); opacity: 0; }
